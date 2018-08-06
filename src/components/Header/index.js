@@ -25,7 +25,6 @@ export default class Header extends React.Component{
     }).then((res) => {
       console.log(res);
       if(res.status === 'success') {
-
         let data = res.results[0].weather_data[0];
         this.setState({
           dayPictureUrl:data.dayPictureUrl,
