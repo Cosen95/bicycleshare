@@ -34,6 +34,7 @@ export default class Child extends React.Component {
   render() {
     return <div>
       <h2>这里是子组件</h2>
+      <p>测试的啊啊啊啊啊啊啊啊啊啊></p>
       <p>{this.props.childCount}</p>
     </div>
 
