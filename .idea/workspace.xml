@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28593008-4f1d-4743-a20b-9992c42a4312" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/carousel-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/carousel-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/carousel-img/carousel-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gallery/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/form/login/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/form/login/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ui/carousel/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ui/carousel/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ui/gallery/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ui/tabs/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,14 +41,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/form/login/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
+            <state relative-caret-position="1410">
               <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -170,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/utils/index.js" />
         <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/src/pages/ui/messages/index.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/pages/ui/tabs/index.js" />
         <option value="$PROJECT_DIR$/src/pages/ui/gallery/index.js" />
         <option value="$PROJECT_DIR$/src/pages/ui/gallery/index.less" />
@@ -179,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/router.js" />
         <option value="$PROJECT_DIR$/src/pages/form/login/index.less" />
         <option value="$PROJECT_DIR$/src/pages/form/login/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -338,7 +305,7 @@
       <workItem from="1533907116150" duration="6357000" />
       <workItem from="1533968254434" duration="12240000" />
       <workItem from="1534049384196" duration="234000" />
-      <workItem from="1534052042316" duration="13838000" />
+      <workItem from="1534052042316" duration="14743000" />
     </task>
     <task id="LOCAL-00001" summary="首页部分页面搭建">
       <created>1533483502907</created>
@@ -396,11 +363,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533980490081</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat:admin/ui/..构建">
+      <created>1534068153819</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1534068153819</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90119000" />
+    <option name="totallyTimeSpent" value="91024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -408,12 +382,12 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49914822" visible="true" weight="0.17362492" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003427" side_tool="true" weight="0.2822186" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500994" side_tool="true" weight="0.28655836" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.35155097" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32682925" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4996573" visible="true" weight="0.55539143" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49900597" visible="true" weight="0.6395864" />
       <window_info id="Favorites" order="2" sideWeight="0.5008518" side_tool="true" weight="0.16567263" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -659,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/ui/notification/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
@@ -792,11 +759,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/form/login/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
+        <state relative-caret-position="1410">
           <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
     </entry>
