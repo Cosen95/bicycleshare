@@ -7,6 +7,10 @@ import Modals from './pages/ui/modals'
 import Loading from './pages/ui/loading'
 import Notification from './pages/ui/notification'
 import Message from './pages/ui/messages'
+import Tab from './pages/ui/tabs'
+import Gallery from './pages/ui/gallery'
+import Carousels from './pages/ui/carousel'
+import LoginForm from './pages/form/login'
 import Error from './pages/error'
 import Admin from './admin';
 
@@ -24,6 +28,10 @@ export default class IRouter extends React.Component{
                   <Route path="/admin/ui/loading" component={Loading}></Route>
                   <Route path="/admin/ui/notification" component={Notification}></Route>
                   <Route path="/admin/ui/messages" component={Message}></Route>
+                  <Route path="/admin/ui/tabs" component={Tab}></Route>
+                  <Route path="/admin/ui/gallery" component={Gallery}></Route>
+                  <Route path="/admin/ui/carousel" component={Carousels}></Route>
+                  <Route path="/admin/form/login" component={LoginForm}></Route>
                   <Route component={Error}></Route>
                 </Switch>
               </Admin>
