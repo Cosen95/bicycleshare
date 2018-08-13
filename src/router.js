@@ -11,6 +11,7 @@ import Tab from './pages/ui/tabs'
 import Gallery from './pages/ui/gallery'
 import Carousels from './pages/ui/carousel'
 import LoginForm from './pages/form/login'
+import RegForm from './pages/form/reg'
 import Error from './pages/error'
 import Admin from './admin';
 
@@ -32,6 +33,7 @@ export default class IRouter extends React.Component{
                   <Route path="/admin/ui/gallery" component={Gallery}></Route>
                   <Route path="/admin/ui/carousel" component={Carousels}></Route>
                   <Route path="/admin/form/login" component={LoginForm}></Route>
+                  <Route path="/admin/form/reg" component={RegForm}></Route>
                   <Route component={Error}></Route>
                 </Switch>
               </Admin>
