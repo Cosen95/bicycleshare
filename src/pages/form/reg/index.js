@@ -1,7 +1,6 @@
 import React from 'react'
 import moment from 'moment'
 import { Form, Icon, Button, Input, InputNumber, Card, Radio, Select, DatePicker, Upload, message, Checkbox } from 'antd';
-import Buttons from "../../ui/buttons";
 
 const FormItem = Form.Item;
 const RadioGroup = Radio.Group;
