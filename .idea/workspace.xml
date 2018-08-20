@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28593008-4f1d-4743-a20b-9992c42a4312" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/table/basic/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/table/basic/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/table/basic/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="1853">
+              <caret line="135" column="73" selection-start-line="135" selection-start-column="73" selection-end-line="135" selection-end-column="73" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -131,9 +130,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="158" />
-    <option name="y" value="6" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="113" />
+    <option name="y" value="-25" />
     <option name="width" value="1940" />
     <option name="height" value="1065" />
   </component>
@@ -264,7 +263,7 @@
       <workItem from="1534427311762" duration="4931000" />
       <workItem from="1534559563289" duration="7469000" />
       <workItem from="1534681795706" duration="606000" />
-      <workItem from="1534774170695" duration="3502000" />
+      <workItem from="1534774170695" duration="3811000" />
     </task>
     <task id="LOCAL-00001" summary="首页部分页面搭建">
       <created>1533483502907</created>
@@ -357,16 +356,23 @@
       <option name="project" value="LOCAL" />
       <updated>1534573570370</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat:admin/table/..构建">
+      <created>1534778660062</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1534778660062</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117383000" />
+    <option name="totallyTimeSpent" value="117692000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="596" y="31" width="1552" height="852" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49914822" visible="true" weight="0.1733951" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49914822" visible="true" weight="0.17362492" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500994" side_tool="true" weight="0.28655836" />
@@ -374,7 +380,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32682925" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49900597" visible="true" weight="0.32416788" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49900597" visible="true" weight="0.3308715" />
       <window_info id="Favorites" order="2" sideWeight="0.5008518" side_tool="true" weight="0.16567263" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -620,8 +626,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/table/basic/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="1853">
+          <caret line="135" column="73" selection-start-line="135" selection-start-column="73" selection-end-line="135" selection-end-column="73" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

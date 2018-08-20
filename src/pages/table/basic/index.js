@@ -50,6 +50,7 @@ export default class BasicTable extends React.Component{
       content: `你确定删除id为：${ids.join(',')}的数据吗?`,
       onOk:()=>{
         message.success('删除成功');
+        this.request();
       }
     })
   })
@@ -132,7 +133,7 @@ export default class BasicTable extends React.Component{
         </Card>
         <Card title="多选表格">
           <div>
-            <Button onClick={this.handleDelete}>删除</Button>
+            <Button onClick={this.handleDelete} style={{ marginBottom:10 }}>删除</Button>
           </div>
           <Table
               bordered
