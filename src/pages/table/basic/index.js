@@ -1,29 +1,38 @@
 import React from 'react'
 import { Card, Table, Modal, message, Button } from 'antd'
 import axios from '../../../axios/index'
+import Utils from '../../../utils/index'
 
 export default class BasicTable extends React.Component{
   state = {
     dataSource: []
+  }
+  params = {
+    page: 1
   }
   componentDidMount() {
     this.request();
   }
 
   request = ()=> {
+    let _this = this;
     axios.ajax({
       url:'/table/list',
       data:{
         params:{
-          page:1
+          page:this.params.page
         }
       }
     }).then((res)=>{
       if(res.code == 0) {
         this.setState({
-          dataSource:res.data,
+          dataSource:res.data.list,
           selectedRowKeys: [],
-          selectedRows: null
+          selectedRows: null,
+          pagination: Utils.pagination(res,(current)=>{
+            _this.params.page = current;
+            this.request();
+          })
         })
       }
     })
@@ -141,6 +150,14 @@ export default class BasicTable extends React.Component{
               dataSource={this.state.dataSource}
               columns={columns}
               pagination={false}
+          />
+        </Card>
+        <Card title="Mock-表格分页">
+          <Table
+              bordered
+              dataSource={this.state.dataSource}
+              columns={columns}
+              pagination={this.state.pagination}
           />
         </Card>
       </div>
