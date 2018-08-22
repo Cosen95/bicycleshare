@@ -13,6 +13,10 @@ import Carousels from './pages/ui/carousel'
 import LoginForm from './pages/form/login'
 import RegForm from './pages/form/reg'
 import BasicTable from './pages/table/basic'
+import HighTable from './pages/table/high'
+import City from './pages/city'
+
+
 import Error from './pages/error'
 import Admin from './admin';
 
@@ -36,6 +40,8 @@ export default class IRouter extends React.Component{
                   <Route path="/admin/form/login" component={LoginForm}></Route>
                   <Route path="/admin/form/reg" component={RegForm}></Route>
                   <Route path="/admin/table/basic" component={BasicTable}></Route>
+                  <Route path="/admin/table/high" component={HighTable}></Route>
+                  <Route path="/admin/city" component={City}></Route>
                   <Route component={Error}></Route>
                 </Switch>
               </Admin>
