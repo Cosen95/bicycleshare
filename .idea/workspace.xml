@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28593008-4f1d-4743-a20b-9992c42a4312" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/city/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/table/high/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/common.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/common.less" afterDir="false" />
-    </list>
+    <list default="true" id="28593008-4f1d-4743-a20b-9992c42a4312" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -44,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/city/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+            <state relative-caret-position="253">
+              <caret line="100" column="39" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -56,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style/common.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
@@ -189,8 +183,8 @@
         <option value="$PROJECT_DIR$/src/utils/index.js" />
         <option value="$PROJECT_DIR$/src/pages/table/high/index.js" />
         <option value="$PROJECT_DIR$/src/router.js" />
-        <option value="$PROJECT_DIR$/src/pages/city/index.js" />
         <option value="$PROJECT_DIR$/src/style/common.less" />
+        <option value="$PROJECT_DIR$/src/pages/city/index.js" />
       </list>
     </option>
   </component>
@@ -210,9 +204,8 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="183" />
-    <option name="y" value="2" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="597" />
     <option name="width" value="1940" />
     <option name="height" value="1103" />
   </component>
@@ -361,7 +354,7 @@
       <workItem from="1534681795706" duration="606000" />
       <workItem from="1534774170695" duration="3988000" />
       <workItem from="1534855535068" duration="4766000" />
-      <workItem from="1534926724626" duration="11100000" />
+      <workItem from="1534926724626" duration="11626000" />
     </task>
     <task id="LOCAL-00001" summary="首页部分页面搭建">
       <created>1533483502907</created>
@@ -475,11 +468,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534861064673</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat:admin/city 构建">
+      <created>1534950582678</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1534950582679</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133735000" />
+    <option name="totallyTimeSpent" value="134261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -493,7 +493,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32682925" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49900597" visible="true" weight="0.2703102" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49900597" visible="true" weight="0.37961596" />
       <window_info id="Favorites" order="2" sideWeight="0.5008518" side_tool="true" weight="0.16567263" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -518,7 +518,8 @@
     <MESSAGE value="feat:admin/ui/buttons构建" />
     <MESSAGE value="feat:admin/ui/..构建" />
     <MESSAGE value="feat:admin/table/..构建" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:admin/table/..构建" />
+    <MESSAGE value="feat:admin/city 构建" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:admin/city 构建" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/carousel-img/6.jpg">
@@ -754,20 +755,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/city/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/common.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/city/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="100" column="39" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
