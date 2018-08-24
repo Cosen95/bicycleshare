@@ -109,9 +109,7 @@ export default class City extends React.Component{
         <div>
           <Card>
             <FilterForm/>
-          </Card>
-          <Card>
-            <Button type="primary" onClick={this.handleOpenCity}>开通城市</Button>
+            <Button type="primary" style={{marginTop:10}} onClick={this.handleOpenCity}>开通城市</Button>
           </Card>
           <div className="content-wrap">
             <Table
