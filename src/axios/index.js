@@ -23,6 +23,7 @@ export default class Axios{
       loading = document.getElementById('ajaxLoading');
       loading.style.display = 'block';
     }
+    // let baseApi = 'https://www.easy-mock.com/mock/5a7278e28d0c633b9c4adbd7/api';
     let baseUrl = 'https://www.easy-mock.com/mock/5b77a194f30ef76bb8687e11/manageMock';
     return new Promise((resolve,reject) => {
       axios({

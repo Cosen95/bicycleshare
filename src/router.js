@@ -1,6 +1,8 @@
 import React from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import App from './App'
+import Admin from './admin';
+import Common from './common';
 import Login from './pages/login'
 import Buttons from './pages/ui/buttons'
 import Modals from './pages/ui/modals'
@@ -16,11 +18,8 @@ import BasicTable from './pages/table/basic'
 import HighTable from './pages/table/high'
 import City from './pages/city'
 import Order from './pages/order'
-
-
-
+import OrderDetail from './pages/order/detail'
 import Error from './pages/error'
-import Admin from './admin';
 
 export default class IRouter extends React.Component{
   render(){
@@ -49,7 +48,11 @@ export default class IRouter extends React.Component{
                 </Switch>
               </Admin>
             }></Route>
-            <Route path="/order/detail" component={Login}></Route>
+            <Route path="/common" render={()=>
+              <Common>
+                <Route path="/common/order/detail/:orderId" component={OrderDetail}></Route>
+              </Common>
+            }></Route>
           </App>
         </HashRouter>
     )
