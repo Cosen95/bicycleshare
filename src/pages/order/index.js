@@ -51,28 +51,27 @@ export default class Order extends React.Component{
   }
   requestList = ()=>{
     let _this = this;
-    axios.ajax({
-      url: '/order/list',
-      data:{
-        params:{
-          page:this.params.page
-        }
-      }
-    }).then((res)=>{
-      let list = res.data.item_list.map((item,index)=>{
-        item.key = index;
-        return item;
-      })
-      this.setState({
-        list: list,
-        selectedRowKeys: [],
-        selectedRows: null,
-        pagination:Utils.pagination(res,(current)=>{
-          _this.params.page = current;
-          _this.requestList();
-        })
-      })
-    })
+    axios.reqList(this,'/order/list',this.params,true)
+    // axios.ajax({
+    //   url: '/order/list',
+    //   data:{
+    //     params:this.params
+    //   }
+    // }).then((res)=>{
+    //   let list = res.data.item_list.map((item,index)=>{
+    //     item.key = index;
+    //     return item;
+    //   })
+    //   this.setState({
+    //     list: list,
+    //     selectedRowKeys: [],
+    //     selectedRows: null,
+    //     pagination:Utils.pagination(res,(current)=>{
+    //       _this.params.page = current;
+    //       _this.requestList();
+    //     })
+    //   })
+    // })
   }
   //订单结束确认
   handleConfirm = ()=>{

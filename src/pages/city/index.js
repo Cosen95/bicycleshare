@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, Table, Button, Form, Select, Modal, message } from 'antd'
 import axios from '../../axios/index'
 import Utils from '../../utils/index'
+import BaseForm from '../../components/BaseForm'
 const FormItem = Form.Item;
 const Option = Select.Option;
 
@@ -14,7 +15,46 @@ export default class City extends React.Component{
   params = {
     page: 1
   }
+  formItemList = [
+    {
+      type:'SELECT',
+      label:'城市',
+      field:'city_id',
+      placeholder:'全部',
+      initialValue:'1',
+      width:120,
+      list: [{ id:'0',name:'全部'},{ id:'1',name:'北京'},{ id:'2',name:'上海'},{ id:'3',name:'深圳'}]
+    },{
+      type:'SELECT',
+      label:'用车模式',
+      field:'mode',
+      placeholder:'全部',
+      initialValue:'1',
+      width:120,
+      list:  [{ id:'0',name:'全部'},{ id:'1',name:'指定停车点模式'},{ id:'2',name:'禁停区模式'}]
+    },{
+      type:'SELECT',
+      label:'营运模式',
+      field:'op_mode',
+      placeholder:'全部',
+      initialValue:'1',
+      width:120,
+      list:  [{ id:'0',name:'全部'},{ id:'1',name:'自营'},{ id:'2',name:'加盟'}]
+    },{
+      type:'SELECT',
+      label:'加盟商授权状态',
+      field:'auth_status',
+      placeholder:'全部',
+      initialValue:'1',
+      width:120,
+      list:  [{ id:'0',name:'全部'},{ id:'1',name:'已授权'},{ id:'2',name:'未授权'}]
+    }
+  ]
   componentDidMount(){
+    this.requestList();
+  }
+  handleFilter = (params)=> {
+    this.params = params;
     this.requestList();
   }
 
@@ -23,9 +63,7 @@ export default class City extends React.Component{
     axios.ajax({
       url: '/open_city',
       data:{
-        params:{
-          page:this.params.page
-        }
+        params:this.params
       }
     }).then((res)=>{
       this.setState({
@@ -108,7 +146,9 @@ export default class City extends React.Component{
     return(
         <div>
           <Card>
-            <FilterForm/>
+            <BaseForm formList={this.formItemList} filterSubmit={this.handleFilter} /> 
+          </Card>
+          <Card>
             <Button type="primary" style={{marginTop:10}} onClick={this.handleOpenCity}>开通城市</Button>
           </Card>
           <div className="content-wrap">
@@ -134,75 +174,6 @@ export default class City extends React.Component{
     )
   }
 }
-class FilterForm extends React.Component{
-  render(){
-    const { getFieldDecorator } = this.props.form;
-    return(
-      <Form layout="inline">
-        <FormItem label="城市">
-          {
-            getFieldDecorator('city_id')(
-                <Select style={{width:100}} placeholder="全部">
-                  <Option value="">全部</Option>
-                  <Option value="1">北京市</Option>
-                  <Option value="2">天津市</Option>
-                  <Option value="3">深圳市</Option>
-                </Select>
-            )
-          }
-        </FormItem>
-        <FormItem label="用车模式">
-          {
-            getFieldDecorator('mode')(
-                <Select
-                    style={{ width: 120 }}
-                    placeholder="全部"
-                >
-                  <Option value="">全部</Option>
-                  <Option value="1">指定停车点模式</Option>
-                  <Option value="2">禁停区模式</Option>
-                </Select>
-            )
-          }
-        </FormItem>
-        <FormItem label="营运模式">
-          {
-            getFieldDecorator('op_mode')(
-                <Select
-                    style={{ width: 80 }}
-                    placeholder="全部"
-                >
-                  <Option value="">全部</Option>
-                  <Option value="1">自营</Option>
-                  <Option value="2">加盟</Option>
-                </Select>
-            )
-          }
-        </FormItem>
-        <FormItem label="加盟商授权状态">
-          {
-            getFieldDecorator('auth_status')(
-                <Select
-                    style={{ width: 100 }}
-                    placeholder="全部"
-                >
-                  <Option value="">全部</Option>
-                  <Option value="1">已授权</Option>
-                  <Option value="2">未授权</Option>
-                </Select>
-            )
-          }
-        </FormItem>
-        <FormItem>
-          <Button type="primary" style={{margin:'0 20px'}}>查询</Button>
-          <Button>重置</Button>
-        </FormItem>
-      </Form>
-  )
-  }
-}
-FilterForm = Form.create({})(FilterForm);
-
 
 class OpenCityForm extends React.Component{
   render(){
