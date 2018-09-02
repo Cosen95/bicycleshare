@@ -24,7 +24,23 @@ class FilterForm extends React.Component{
                 let initialValue = item.initialValue || '';
                 let placeholder = item.placeholder;
                 let width = item.width;
-                if (item.type == '时间查询') {
+                if (item.type == '城市') {
+                    const city = <FormItem label={label} key={field}>
+                        {
+                            getFieldDecorator([field],{
+                                initialValue:initialValue
+                            })(
+                                <Select
+                                style={{ width: width }}
+                                placeholder={placeholder}
+                                >
+                                {Utils.getOptionList(item.list)}
+                                </Select>
+                            )
+                        }
+                    </FormItem>
+                    formItemList.push(city);
+                } else if (item.type == '时间查询') {
                     const begin_time = <FormItem label="订单时间" key={field}>
                         {
                            getFieldDecorator('begin_time')(
