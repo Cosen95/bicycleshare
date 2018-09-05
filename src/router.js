@@ -23,6 +23,7 @@ import BikeMap from './pages/map'
 import Bars from './pages/echart/bar'
 import Pie from './pages/echart/pie'
 import Line from './pages/echart/line'
+import RichText from './pages/rich'
 import Error from './pages/error'
 
 export default class IRouter extends React.Component{
@@ -52,6 +53,7 @@ export default class IRouter extends React.Component{
                   <Route path="/admin/charts/bar" component={Bars}></Route>
                   <Route path="/admin/charts/pie" component={Pie}></Route>
                   <Route path="/admin/charts/line" component={Line}></Route>
+                  <Route path="/admin/rich" component={RichText}></Route>
                   <Route component={Error}></Route>
                 </Switch>
               </Admin>
