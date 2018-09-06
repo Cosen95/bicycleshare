@@ -24,6 +24,7 @@ import Bars from './pages/echart/bar'
 import Pie from './pages/echart/pie'
 import Line from './pages/echart/line'
 import RichText from './pages/rich'
+import Permission from './pages/permission'
 import Error from './pages/error'
 
 export default class IRouter extends React.Component{
@@ -54,6 +55,7 @@ export default class IRouter extends React.Component{
                   <Route path="/admin/charts/pie" component={Pie}></Route>
                   <Route path="/admin/charts/line" component={Line}></Route>
                   <Route path="/admin/rich" component={RichText}></Route>
+                  <Route path="/admin/permission" component={Permission}></Route>             
                   <Route component={Error}></Route>
                 </Switch>
               </Admin>
