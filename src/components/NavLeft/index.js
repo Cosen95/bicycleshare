@@ -1,16 +1,30 @@
 import React from 'react'
 import { Menu } from 'antd';
 import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { switchMenu } from './../../redux/action'
 import MenuConfig from './../../config/menuConfig'
 import './index.less'
 const SubMenu = Menu.SubMenu;
 
-export default class NavLeft extends React.Component{
+class NavLeft extends React.Component{
+  state = {
+    currentKey: ''
+  }
+  handleClick = ({item,key})=> {
+    console.log('点击菜单-------',item);
+    const { props:{children:{props:{children:navTitle}}}} = item;
+    this.props.dispatch(switchMenu(navTitle))
+    this.setState({
+      currentKey:key
+    })
+  }
   componentWillMount(){
     const menuTreeNode = this.renderMenu(MenuConfig);
-
+    let currentKey = window.location.hash.replace(/#|\?.*/g,'');
     this.setState({
-      menuTreeNode
+      menuTreeNode,
+      currentKey
     })
   }
 
@@ -36,16 +50,15 @@ export default class NavLeft extends React.Component{
             <img src="/assets/logo-ant.svg" alt=""/>
             <h1>小黄车后台</h1>
           </div>
-          <Menu theme="dark">
-            {/*<SubMenu key="sub1" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>*/}
-              {/*<Menu.Item key="1">Option 9</Menu.Item>*/}
-              {/*<Menu.Item key="2">Option 10</Menu.Item>*/}
-              {/*<Menu.Item key="3">Option 11</Menu.Item>*/}
-              {/*<Menu.Item key="4">Option 12</Menu.Item>*/}
-            {/*</SubMenu>*/}
+          <Menu 
+            onClick={this.handleClick}
+            selectedKeys={this.state.currentKey}
+            theme="dark">
             { this.state.menuTreeNode}
           </Menu>
         </div>
     )
   }
 }
+
+export default connect()(NavLeft)
